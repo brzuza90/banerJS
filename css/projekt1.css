@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+}
+
+section.baner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #ccc;
+}
+
+section.baner img.color {
+  position: absolute;
+  bottom: 0;
+  right: -5%;
+  height: 40%;
+  z-index: 1;
+  -webkit-animation: color 4s linear infinite;
+          animation: color 4s linear infinite;
+}
+
+section.baner img.gray {
+  position: absolute;
+  bottom: 0;
+  left: -65%;
+  height: 100%;
+  -webkit-animation: gray 4s linear infinite;
+          animation: gray 4s linear infinite;
+}
+
+section.baner div.member {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 10px;
+  -webkit-animation: text 4s linear infinite;
+          animation: text 4s linear infinite;
+}
+
+section.baner div.member h1 {
+  font-size: 3.5em;
+}
+
+section.baner div.member h2 {
+  font-size: 2.2em;
+}
+
+@media (orientation: landscape) {
+  section.baner img.color {
+    right: 5%;
+    height: 50%;
+  }
+  section.baner img.gray {
+    bottom: -25%;
+    left: -15%;
+    height: 130%;
+  }
+  section.baner div.member {
+    top: 15%;
+    width: 55%;
+    left: 45%;
+  }
+}
+
+@media (min-width: 768px) {
+  section.baner img.color {
+    right: -5%;
+    height: 45%;
+  }
+  section.baner img.gray {
+    bottom: 0;
+    left: -45%;
+    height: 100%;
+  }
+  section.baner div.member {
+    top: 25%;
+    width: 55%;
+    left: 45%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+  section.baner img.color {
+    right: 0;
+    height: 50%;
+  }
+  section.baner img.gray {
+    bottom: 0;
+    left: -20%;
+    height: 100%;
+  }
+  section.baner div.member {
+    top: 20%;
+    width: 55%;
+    left: 45%;
+  }
+  section.baner div.member h1 {
+    font-size: 5em;
+  }
+  section.baner div.member h2 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1281px) {
+  section.baner img.gray {
+    bottom: 0;
+    left: -10%;
+    height: 110%;
+  }
+  section.baner div.member {
+    top: 20%;
+    width: 55%;
+    left: 45%;
+  }
+  section.baner div.member h1 {
+    font-size: 8em;
+  }
+  section.baner div.member h2 {
+    font-size: 6em;
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+    opacity: 0;
+  }
+}
+
+@keyframes color {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes gray {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(5%) scale(1.1);
+            transform: translateX(5%) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes gray {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(5%) scale(1.1);
+            transform: translateX(5%) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes text {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=projekt1.css.map */
